@@ -12,7 +12,155 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+/* Gallery style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: auto;
+  padding: 24px 156px;
+
+  width: 1440px;
+  height: 696px;
+}
+
+.gallery-link {
+  display: flex;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+
+/* Form styles */
+.feedback-form {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+}
+
+.feedback-form label:first-child {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 360px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form label>input {
+  box-sizing: border-box;
+  padding-left: 16px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+}
+
+.feedback-form label>input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: transparent;
+}
+
+.feedback-form label>input:hover {
+  border-color: #000;
+}
+
+.feedback-form label>input:focus {
+  border: 1px solid #808080;
+}
+
+.feedback-form label>input:focus::placeholder {
+  color: #2e2f42;
+}
+
+.feedback-form label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 360px;
+  height: 112px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form label>textarea {
+  box-sizing: border-box;
+  padding-left: 16px;
+  width: 360px;
+  height: 80px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+}
+
+.feedback-form button {
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border-color: #4e75ff;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.feedback-form button:hover {
+  border-color: #6c8cff;
+  background: #6c8cff;
+}
