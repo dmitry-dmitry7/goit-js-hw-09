@@ -40,6 +40,7 @@ function handleSubmit(event) {
   } else {
     console.log(formData);
     localStorage.removeItem(localStorageKey);
+    formData = { email: "", message: "" };
     form.reset();
   }
     
